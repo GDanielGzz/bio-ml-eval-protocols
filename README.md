@@ -47,8 +47,24 @@ by `bioeval.datasets.make_clustered_binary`, which reproduces the structure that
 causes the problem — records in clusters, cluster members near-identical, labels
 that are a property of the cluster.
 
----
 
+### The same effect, on a real corpus
+
+The demonstration above is synthetic so that it runs anywhere. The effect is not.
+
+[**amp-classifier**](https://github.com/GDanielGzz/amp-classifier) applies this
+standard to DRAMP 3.0: MMseqs2 clustering at 40% identity, 1,969 held-out
+sequences across non-overlapping clusters, bootstrap CIs on every reported
+metric. A frozen ESM2-650M head reaches **AUC 0.919 [0.906-0.931]** against an
+XGBoost baseline over 428 engineered features at **0.864 [0.845-0.880]** -
+non-overlapping intervals on both AUC and MCC.
+
+That repository is where these protocols came from. `ml/scripts/make_clusters.py`,
+`make_splits.py` and `ml/eval_common.py` are the problem-specific ancestors of
+`bioeval.splits`, `bioeval.leakage` and `bioeval.bootstrap`: the same
+discipline, written once for one corpus and then generalised.
+
+---
 ## Quickstart
 
 ```python
