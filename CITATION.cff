@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "bio-ml-eval-protocols — a runnable checklist for honest evaluation of biological ML models"
+abstract: >-
+  An opinionated, reproducible set of practitioner documents on evaluating
+  biological machine-learning models without self-deception: a catalog of
+  common methodology traps (homology leakage, random splits on clustered
+  data, batch confounders, benchmark redundancy, method/benchmark
+  co-development), a vendor-free bootstrap confidence-interval recipe with a
+  paired variant for head-to-head comparison, and a preregistration-style
+  template for reporting negative results. Ships with `bioeval`, a Python
+  package implementing group-aware splitting, split leakage auditing, and
+  cluster-aware percentile/BCa and paired bootstrap confidence intervals, so
+  the standard is enforced by a dependency rather than asserted in prose.
+authors:
+  - family-names: "González Lozano"
+    given-names: "Daniel"
+    orcid: "https://orcid.org/0009-0002-1737-276X"
+    email: "sleepy.komodo@protonmail.com"
+    affiliation: "Tecnológico de Monterrey, Monterrey, Mexico"
+version: "0.2.0"
+date-released: 2026-08-18
+license: MIT
+url: "https://github.com/GDanielGzz/bio-ml-eval-protocols"
+repository-code: "https://github.com/GDanielGzz/bio-ml-eval-protocols"
+keywords:
+  - "machine learning"
+  - "bioinformatics"
+  - "model evaluation"
+  - "data leakage"
+  - "cluster-aware splits"
+  - "bootstrap confidence intervals"
+  - "negative results"
+  - "reproducibility"
+# Uncomment and fill in after the Zenodo deposit:
+# preferred-citation:
+#   type: report
+#   title: "bio-ml-eval-protocols: a practitioner checklist for honest biological-ML evaluation"
+#   authors:
+#     - family-names: "González Lozano"
+#       given-names: "Daniel"
+#       orcid: "https://orcid.org/0009-0002-1737-276X"
+#   year: 2026
+#   doi: "10.5281/zenodo.XXXXXXX"
+#   institution:
+#     name: "Tecnológico de Monterrey"
