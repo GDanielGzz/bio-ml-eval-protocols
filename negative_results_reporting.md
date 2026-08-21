@@ -345,12 +345,6 @@ reproduces on a fresh clone:
 pytest tests/test_negative_results_reporting.py && make figures
 ```
 
-<!-- TODO: Sayaka decide — reuse the single offline fixture (toy FASTA + labels +
-     frozen prediction vectors) shared with test_bootstrap_ci.py and
-     test_methodology_traps.py rather than adding a third loader. This demo asserts
-     only the verdict branch (straddle-0 -> "tie"); it should import paired_bootstrap
-     from examples/bootstrap_ci.py, not re-implement it. Wire it when the shared
-     fixture lands, per the coordination note in bootstrap_ci_recipe.md (6.3). -->
 
 ---
 

@@ -319,10 +319,6 @@ a fresh clone:
 pytest tests/test_methodology_traps.py && make figures
 ```
 
-<!-- TODO: Sayaka decide — fixture source for the demo. Smallest honest option
-     is a bundled toy FASTA + labels under examples/ so the test runs offline in
-     CI without a network pull. Wire this when bootstrap_ci_recipe.md (6.3) lands
-     its shared fixtures, to avoid duplicating the loader. -->
 
 ---
 

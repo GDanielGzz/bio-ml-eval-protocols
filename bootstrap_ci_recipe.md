@@ -393,11 +393,6 @@ paired-bootstrap verdict on a small public AMP-style fixture, so the numbers in
 pytest tests/test_bootstrap_ci.py && make figures
 ```
 
-<!-- TODO: Sayaka decide — share one offline fixture (toy FASTA + labels +
-     frozen prediction vectors) under examples/ between this demo and
-     test_methodology_traps.py, so CI runs without a network pull and the two
-     docs do not duplicate a loader. This is the shared-fixture coordination
-     point methodology_traps.md (6.2) left open. -->
 
 ---
 
